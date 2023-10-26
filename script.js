@@ -3,5 +3,8 @@ const button=document.getElementById("enterBtn");
 const para=document.getElementById("status");
 
 button.addEventListener("click",() =>{
-	para.innerHTML="<H1>Entered Metaverse</H1>";
+	let h1=document.createElement("h1");
+	h1.innerText="Entered Metaverse";
+	document.body.insertbefore(h1,para)
+	para.remove();
 })
